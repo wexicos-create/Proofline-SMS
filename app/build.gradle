@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace 'com.proofline.sms'
-    compileSdk 33
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.proofline.sms"
         minSdk 24
-        targetSdk 33
+        targetSdk 35
         versionCode 1
         versionName "1.0.0"
 
@@ -19,28 +19,58 @@ android {
 
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
+            shrinkResources true
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled false
+        }
     }
+    
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_11
-        targetCompatibility JavaVersion.VERSION_11
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
     }
+    
     kotlinOptions {
-        jvmTarget = '11'
+        jvmTarget = '17'
+    }
+    
+    buildFeatures {
+        viewBinding true
     }
 }
 
 dependencies {
-    implementation 'androidx.core:core:1.10.0'
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
+    // Core & UI
+    implementation 'androidx.core:core:1.13.0'
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    
+    // Security & Cryptography
     implementation 'androidx.security:security-crypto:1.1.0-alpha06'
     implementation 'org.bouncycastle:bcprov-jdk15on:1.70'
+    implementation 'androidx.security:security-identity-credential:1.0.0-alpha01'
     
+    // Jetpack Compose (optional - for modern UI)
+    implementation 'androidx.compose.ui:ui:1.6.0'
+    implementation 'androidx.compose.material3:material3:1.2.0'
+    implementation 'androidx.compose.runtime:runtime:1.6.0'
+    
+    // Lifecycle & Coroutines
+    implementation 'androidx.lifecycle:lifecycle-runtime-ktx:2.7.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3'
+    
+    // Testing
     testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.mockito:mockito-core:5.7.0'
+    testImplementation 'org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3'
+    
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.5.2'
 }
