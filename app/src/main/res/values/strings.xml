@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Proofline SMS</string>
+    <string name="encrypted">Encriptado</string>
+    <string name="main_title">Mensajería Segura</string>
+    <string name="compose_new_message">Nuevo Mensaje</string>
+    <string name="send">Enviar</string>
+    <string name="generate_link">Generar Enlace</string>
+    <string name="recipient">Destinatario</string>
+    <string name="message_hint">Escribe tu mensaje...</string>
+</resources>
