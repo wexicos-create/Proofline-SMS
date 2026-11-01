@@ -1,6 +1,6 @@
-# J. Israel Cervantes Alvarado · !SRAEl
+# [J. Israel Cervantes Alvarado · !srael](https://archivo-historico-inmutable.vercel.app/trayectoria)
 
-**Autor y creador de iniciativas digitales: J. Israel Cervantes Alvarado**  
+**Autor y creador de iniciativas digitales: [J. Israel Cervantes Alvarado](https://archivo-historico-inmutable.vercel.app/trayectoria)**  
 **Firma de presentación: !SRAEl**
 
 ## Proyecto documentado: Proofline-SMS
@@ -15,7 +15,7 @@ La cartera del titular en GitHub contiene investigación, prototipos y desarroll
 
 El historial Git, los README y los archivos del repositorio documentan entregables concretos. Las pruebas, despliegues y funciones en producción deben comprobarse por separado. No se atribuye al titular código de terceros exclusivamente por existir en su repositorio.
 
-- [Trayectoria y proyectos — CA Internet Archive](https://archivo-historico-inmutable.vercel.app/#trayectoria)
+- [Trayectoria y proyectos — CA Internet Archive](https://archivo-historico-inmutable.vercel.app/trayectoria)
 - [Cartera de GitHub](https://github.com/wexicos-create?tab=repositories)
 - [Contacto](https://archivo-historico-inmutable.vercel.app/#contacto)
 
